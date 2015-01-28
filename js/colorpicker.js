@@ -6,6 +6,8 @@
  * Dual licensed under the MIT and GPL licenses
  * 
  */
+var jQuery = require('jquery');
+
 (function ($) {
 	var ColorPicker = function () {
 		var
