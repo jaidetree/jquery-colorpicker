@@ -4,7 +4,7 @@
   "description": "A browserify compatible version of jquery-colorpicker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --bail test/"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/jayzawrotny/eyecon-colorpicker/issues"
   },
-  "homepage": "https://github.com/jayzawrotny/eyecon-colorpicker"
+  "homepage": "https://github.com/jayzawrotny/eyecon-colorpicker",
+  "devDependencies": {
+    "jsdom": "^3.1.0",
+    "mocha": "^2.1.0",
+    "underscore": "^1.7.0",
+    "jquery": "=1.11.1"
+  }
 }

@@ -6,12 +6,14 @@
  * Dual licensed under the MIT and GPL licenses
  * 
  */
+
 var jQuery = require('jquery');
 
 (function ($) {
-	var ColorPicker = function () {
+	var ColorPicker = (function () {
 		var
 			ids = {},
+			document = window.document,
 			inAction,
 			charMin = 65,
 			visible,
@@ -476,11 +478,11 @@ var jQuery = require('jquery');
 				});
 			}
 		};
-	}();
+	}());
 	$.fn.extend({
 		ColorPicker: ColorPicker.init,
 		ColorPickerHide: ColorPicker.hidePicker,
 		ColorPickerShow: ColorPicker.showPicker,
 		ColorPickerSetColor: ColorPicker.setColor
 	});
-})(jQuery)
+}(jQuery));
